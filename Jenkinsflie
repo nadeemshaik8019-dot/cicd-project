@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/nadeemshaik8019-dot/cicd-project.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Build Successful'
+            }
+        }
+    }
+}
